@@ -30,8 +30,8 @@ This project is a RESTful Web API built using ASP.NET Core. It demonstrates secu
 4. Open Swagger: https://localhost:xxxx/swagger
 
 ## 🔐 Test Credentials
-username: admin  
-password: 123  
+username: testuser  
+password: test@123  
 
 ## 📷 Screenshots
 (Add Swagger screenshot here)
