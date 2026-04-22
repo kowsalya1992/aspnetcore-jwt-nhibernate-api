@@ -22,6 +22,27 @@ namespace IAM.Api
             _session.Flush();
         }
 
+        public User GetById(int id)
+        {
+            return _session.Get<User>(id);
+        }
+
+        public void Update(User user)
+        {
+            _session.Update(user);
+            _session.Flush();
+        }
+
+        public void Delete(int id)
+        {
+            var user = _session.Get<User>(id);
+            if (user != null)
+            {
+                _session.Delete(user);
+                _session.Flush();
+            }
+        }
+
         public User GetByUsernameAndPassword(string username, string password)
         {
             return _session.Query<User>()
