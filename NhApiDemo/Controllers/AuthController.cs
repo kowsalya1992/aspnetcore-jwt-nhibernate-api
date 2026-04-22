@@ -1,5 +1,5 @@
+using IAM.Api;
 using Microsoft.AspNetCore.Mvc;
-using NhApiDemo;
 using NhApiDemo.Auth;
 
 [ApiController]
@@ -7,9 +7,9 @@ using NhApiDemo.Auth;
 public class AuthController : ControllerBase
 {
     private readonly JwtService _jwtService;
-    private readonly UserRepository _repo;
+    private readonly UserBO _repo;
 
-    public AuthController(UserRepository repo, JwtService jwtService)
+    public AuthController(UserBO repo, JwtService jwtService)
     {
         _repo = repo;
         _jwtService = jwtService;

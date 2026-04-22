@@ -1,12 +1,12 @@
 ﻿using NHibernate;
 
-namespace NhApiDemo
+namespace IAM.Api
 {
-    public class UserRepository
+    public class UserBO
     {
-        private readonly NHibernate.ISession _session;
+        private readonly ISession _session;
 
-        public UserRepository(NHibernate.ISession session)
+        public UserBO(ISession session)
         {
             _session = session;
         }

@@ -1,7 +1,7 @@
 ﻿
 using FluentNHibernate.Mapping;
 
-namespace NhApiDemo
+namespace IAM.Api
 {
     public class UserMap : ClassMap<User>
     {

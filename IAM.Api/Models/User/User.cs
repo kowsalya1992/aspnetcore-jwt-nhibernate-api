@@ -1,4 +1,4 @@
-﻿namespace NhApiDemo
+﻿namespace IAM.Api
 {
     public class User
     {

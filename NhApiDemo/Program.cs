@@ -1,3 +1,4 @@
+using IAM.Api;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -49,7 +50,7 @@ builder.Services.AddScoped(factory =>
     return sessionFactory.OpenSession();
 });
 
-builder.Services.AddScoped<UserRepository>();
+builder.Services.AddScoped<UserBO>();
 
 var key = Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]);
 

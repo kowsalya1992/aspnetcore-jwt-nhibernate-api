@@ -1,6 +1,7 @@
 ﻿
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
+using IAM.Api;
 using NHibernate;
 
 namespace NhApiDemo
